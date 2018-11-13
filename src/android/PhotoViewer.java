@@ -77,6 +77,9 @@ public class PhotoViewer extends CordovaPlugin {
             case REQ_CODE:
                 launchActivity();
                 break;
+            default:
+                this.callbackContext.error("");
+                break;
         }
 
     }

@@ -1,27 +1,33 @@
-var exec = require('cordova/exec');
+cordova.define("com-sarriaroman-photoviewer.PhotoViewer", function(require, exports, module) {
+  var exec = require('cordova/exec');
 
-exports.show = function(url, title, options) {
+  exports.show = function(url, title, options) {
     if (title == undefined) {
-        title = '';
+      title = '';
     }
 
     if (typeof options == "undefined") {
-        options = {};
+      options = {};
     }
 
     if (options.share === undefined) {
-        options.share = false;
+      options.share = false;
     }
 
     if (options.closeButton === undefined) {
-        options.closeButton = true;
+      options.closeButton = true;
     }
 
     if (options.copyToReference === undefined) {
-        options.copyToReference = false;
+      options.copyToReference = false;
+    }
+    if (options.landscape === undefined) {
+      options.landscape = false;
     }
 
-    var args = [url, title, options.share, options.closeButton, options.copyToReference];
+    var args = [url, title, options.share, options.closeButton, options.copyToReference, options.landscape];
 
-    exec(function() {}, function() {}, "PhotoViewer", "show", args);
-};
+    exec(options.success || function() {}, options.error || function() {}, "PhotoViewer", "show", args);
+  };
+
+});

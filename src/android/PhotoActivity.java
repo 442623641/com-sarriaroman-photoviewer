@@ -2,6 +2,7 @@ package com.sarriaroman.PhotoViewer;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -53,7 +54,6 @@ public class PhotoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(getApplication().getResources().getIdentifier("activity_photo", "layout", getApplication().getPackageName()));
 
         // Load the Views
@@ -65,13 +65,9 @@ public class PhotoActivity extends Activity {
             this.mShare = mArgs.getBoolean(2);
             //Set the share button visibility
             shareBtnVisibility = this.mShare ? View.VISIBLE : View.INVISIBLE;
-            if(mOptions.getBoolean("landscape")){
+            if(mArgs.getBoolean(5)){
                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-            }else if(mOptions.getBoolean("portrait")){
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             }
-
-
 
         } catch (JSONException exception) {
             shareBtnVisibility = View.INVISIBLE;

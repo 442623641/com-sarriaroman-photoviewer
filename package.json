@@ -1,27 +1,25 @@
 {
-  "_from": "com-sarriaroman-photoviewer",
+  "_from": "git+https://github.com/442623641/com-sarriaroman-photoviewer.git",
   "_id": "com-sarriaroman-photoviewer@1.1.18",
   "_inBundle": false,
-  "_integrity": "sha1-7S83qh5nZ57W/Au3OKXg324LBvM=",
+  "_integrity": "",
   "_location": "/com-sarriaroman-photoviewer",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "com-sarriaroman-photoviewer",
-    "name": "com-sarriaroman-photoviewer",
-    "escapedName": "com-sarriaroman-photoviewer",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+    "type": "git",
+    "raw": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
+    "rawSpec": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
+    "saveSpec": "git+https://github.com/442623641/com-sarriaroman-photoviewer.git",
+    "fetchSpec": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "http://registry.npm.taobao.org/com-sarriaroman-photoviewer/download/com-sarriaroman-photoviewer-1.1.18.tgz",
+  "_resolved": "git+https://github.com/442623641/com-sarriaroman-photoviewer.git#34948cbb773d657d6caf1b9fe913677aff8c8cc3",
   "_shasum": "ed2f37aa1e67679ed6fc0bb738a5e0df6e0b06f3",
-  "_spec": "com-sarriaroman-photoviewer",
+  "_spec": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
   "_where": "/Users/zhangleo/workspace/teacher3",
   "author": {
     "name": "Román A. Sarria"
