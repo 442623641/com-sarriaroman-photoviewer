@@ -1,33 +1,7 @@
 {
-  "_from": "git+https://github.com/442623641/com-sarriaroman-photoviewer.git",
-  "_id": "com-sarriaroman-photoviewer@1.1.18",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/com-sarriaroman-photoviewer",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
-    "rawSpec": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
-    "saveSpec": "git+https://github.com/442623641/com-sarriaroman-photoviewer.git",
-    "fetchSpec": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/442623641/com-sarriaroman-photoviewer.git#34948cbb773d657d6caf1b9fe913677aff8c8cc3",
-  "_shasum": "ed2f37aa1e67679ed6fc0bb738a5e0df6e0b06f3",
-  "_spec": "https://github.com/442623641/com-sarriaroman-photoviewer.git",
-  "_where": "/Users/zhangleo/workspace/teacher3",
-  "author": {
-    "name": "Román A. Sarria"
-  },
-  "bugs": {
-    "url": "https://github.com/sarriaroman/photoviewer/issues"
-  },
-  "bundleDependencies": false,
+  "name": "com-sarriaroman-photoviewer",
+  "version": "1.1.18",
+  "description": "This plugin is intended to show a picture from an URL into a Photo Viewer with zoom features.",
   "cordova": {
     "id": "com-sarriaroman-photoviewer",
     "platforms": [
@@ -35,9 +9,10 @@
       "ios"
     ]
   },
-  "deprecated": false,
-  "description": "This plugin is intended to show a picture from an URL into a Photo Viewer with zoom features.",
-  "homepage": "https://github.com/sarriaroman/photoviewer#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarriaroman/photoviewer"
+  },
   "keywords": [
     "cordova",
     "photoviewer",
@@ -45,11 +20,6 @@
     "cordova-android",
     "cordova-ios"
   ],
-  "license": "MIT",
-  "name": "com-sarriaroman-photoviewer",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sarriaroman/photoviewer.git"
-  },
-  "version": "1.1.18"
+  "author": "Román A. Sarria",
+  "license": "MIT"
 }
