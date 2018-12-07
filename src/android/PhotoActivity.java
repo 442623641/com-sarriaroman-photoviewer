@@ -154,7 +154,7 @@ public class PhotoActivity extends Activity {
         photo.setVisibility(View.VISIBLE);
         loadingBar.setVisibility(View.INVISIBLE);
         shareBtn.setVisibility(shareBtnVisibility);
-        mAttacher.setMaximumScale(8);
+        mAttacher.setMaximumScale(10);
         mAttacher.update();
     }
 
